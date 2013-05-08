@@ -1,15 +1,33 @@
-" Softtabs, 2 spaces
+syntax on
+filetype plugin on
+filetype indent on
+
+" Display
+set title
+set number                " Affiche le numero des lignes
+set ruler                 " Affiche la position actuelle du curseur
+set wrap                  " Affiche les lignes trop longues sur plusieurs lignes
+
+set antialias
+
+" Search
+set ignorecase            " Ignore la casse lors d'une recherche
+set smartcase             " Si une recherche contient une majuscule,
+                          " re-active la sensibilite a la casse
+set incsearch             " Surligne les resultats de recherche pendant la saisie
+set hlsearch              " Surligne les resultats de recherche
+
+" Tabs
 set tabstop=2
 set shiftwidth=2
 set expandtab
 
-" Always display the status line
+
 set laststatus=2
+
 
 " Pathogen
 call pathogen#infect()
-syntax on
-filetype plugin indent on
 
 " Solarized
 set background=dark
