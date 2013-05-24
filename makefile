@@ -8,6 +8,9 @@ install-vim:
 		mv ~/.vimrc ~/.vimrc${BACKUP_EXT}; \
 	fi
 	#echo 
+	if [ ! -d ~/.vim ]; then \
+		mkdir ~/.vim; \
+	fi
 	if [ -d ~/.vim/bundle ]; then \
 		mv ~/.vim/bundle ~/.vim/bundle${BACKUP_EXT}; \
 	fi
