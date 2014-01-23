@@ -63,7 +63,8 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
-
+map! jk <Esc>
+map! ;; <Esc>
 
 " Use w!! when you've forgotten to open your file as root
 cmap w!! w !sudo tee % >/dev/null
