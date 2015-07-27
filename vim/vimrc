@@ -1,6 +1,19 @@
-" Pathogen
-call pathogen#infect()
+" Vundle
+set nocompatible
+filetype off
 
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
+call vundle#end()
+
+" Syntax
 syntax on
 filetype plugin on
 filetype indent on
@@ -53,7 +66,7 @@ call togglebg#map("<F5>")
 nmap <silent> <F3> :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 
-" Desactiver les touches directionnelles
+" Disable arrows
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
