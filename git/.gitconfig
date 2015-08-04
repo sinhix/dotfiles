@@ -3,7 +3,7 @@
 	email = 
 [core]
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-  	editor = /usr/bin/vim
+	editor = /usr/bin/vim
 [alias]
 	st = status
 	ci = commit
@@ -12,6 +12,7 @@
 	df = diff
 	lg = log -p
 	cpick = cherry-pick
+	pur = pull --rebase
 [rerere]
 	enabled = true
 	autoupdate = true
