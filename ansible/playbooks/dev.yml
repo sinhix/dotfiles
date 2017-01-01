@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  tasks:
+    - name: install basic packages
+      package:
+        name: [ vim git curl htop ccze ]
+        state: present
+      become: true
+    - name: .gitconfig
+      copy:
+        src: ../../git/
+        dest: ~/
